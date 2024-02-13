@@ -31,13 +31,13 @@ COPY environment.yml pyproject.toml main.py ./
 RUN conda env create -f environment.yml
 
 # Create a script to update Poetry within the conda environment
-RUN echo "source /root/miniconda3/etc/profile.d/conda.sh && conda activate atta_env && poetry update" > /root/update_poetry.sh
+RUN echo "source /root/miniconda3/etc/profile.d/conda.sh && conda activate solenopsis_env && poetry update" > /root/update_poetry.sh
 
 # Execute the script to update Poetry
 RUN /bin/bash /root/update_poetry.sh
 
 # Add command to .bashrc to activate conda environment on shell start
-RUN echo "source /root/miniconda3/etc/profile.d/conda.sh && conda activate atta_env" >> /root/.bashrc
+RUN echo "source /root/miniconda3/etc/profile.d/conda.sh && conda activate solenopsis_env" >> /root/.bashrc
 
 # Set entrypoint to activate conda environment on container start
 ENTRYPOINT [ "/bin/bash", "-c", "source /root/.bashrc && /bin/bash" ]

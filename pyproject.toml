@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "atta-poetry"
+name = "solenopsis-poetry"
 version = "0.1.0"
 description = ""
 authors = ["galagain <calvin@galagain.com>"]
