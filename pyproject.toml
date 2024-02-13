@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "atta-poetry"
+version = "0.1.0"
+description = ""
+authors = ["galagain <calvin@galagain.com>"]
+
+[tool.poetry.dependencies]
+python = "3.10.0"
+pandas = "^2.2.0"
+numpy = "^1.26.4"
+matplotlib = "^3.8.2"
+torch = { version = "2.2.0+cu121", source = "pytorch" }
+torchvision = { version = "0.17.0+cu121", source = "pytorch" }
+torchaudio = { version = "2.2.0", source = "pytorch" }
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
