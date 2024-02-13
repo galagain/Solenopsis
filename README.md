@@ -27,7 +27,7 @@ To build the Docker image, run the following command in the directory containing
 ```bash
 docker build -t solenopsis_v1 .
 ```
-This command builds a Docker image named atta_v1 following the instructions defined in the Dockerfile.
+This command builds a Docker image named solenopsis_v1 following the instructions defined in the Dockerfile.
 
 ## Running the Docker Container
 To run the Docker container using the built image, with GPU support and mounting a volume for data, use the following command:
