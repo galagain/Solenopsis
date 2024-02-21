@@ -16,8 +16,8 @@ This repository provides a Docker configuration utilizing Conda and Poetry for P
 Before building the Docker image, you must first clone the repository containing the necessary project files. Use the following command to clone the repository:
 
 ```bash
-git clone https://github.com/galagain/Solenopsis.git
-cd Solenopsis
+git clone https://github.com/galagain/solenopsis.git
+cd solenopsis
 ```
 Ensure you navigate into the main directory of the cloned repository where the Dockerfile and other project files are located.
 
